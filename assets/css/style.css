@@ -1,0 +1,27 @@
+.navbar
+{
+    min-height: 180px;
+}
+
+@media (min-width: 768px)
+{
+    .navbar-right
+    {
+        margin-right: 0px;
+        margin-top: 129px;
+    }
+    
+    .navbar-toggle
+    {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    
+    .navbar-toggle
+    {
+        margin-top: 135px;
+    }
+}
