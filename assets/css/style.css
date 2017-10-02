@@ -1,6 +1,13 @@
+
 .navbar
 {
     min-height: 180px;
+}
+
+.bg-strip-red
+{
+    border:#B20000 solid 15px;
+    margin-top: 180px;
 }
 
 @media (min-width: 768px)
@@ -15,6 +22,8 @@
     {
         margin-left: 100px;
     }
+    
+    
 }
 
 @media (max-width: 767px)
@@ -24,4 +33,11 @@
     {
         margin-top: 135px;
     }
+    
+    .bg-strip-red
+    {
+        /*margin-top: 434px;*/
+    }
+    
 }
+
