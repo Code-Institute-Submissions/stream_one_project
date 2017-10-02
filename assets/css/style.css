@@ -80,5 +80,18 @@
     
 }
 
+@media (min-width: 1200px)
+{
+    .media-big-screen img
+    {
+        margin-left: auto;
+    }
+    
+    .media-big-screen p
+    {
+        margin-left: auto;
+    }
+}
+
 
 
