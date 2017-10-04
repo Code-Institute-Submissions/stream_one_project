@@ -128,6 +128,52 @@
     font-weight: bolder;
 }
 
+.history-items
+{
+    margin-bottom: 4%;
+}
+    
+
+.timeline-item
+{
+    padding: 4em 0em 0em 2em;
+    position: relative;
+    color: black;
+    border-left: 1px solid;
+}
+
+.timeline-item p
+{
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before
+{
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-weight: 500;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::after
+{
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background-color: red;
+}
+
 legend
 {
     font-size: 1.5rem;
@@ -236,6 +282,12 @@ fieldset
         margin-bottom: 20px;
     }
     
+    .history-items
+    {
+        margin-left: 4%;
+    }
+    
+    
     
 }
 
@@ -280,6 +332,28 @@ fieldset
     {
         padding-left: 40px;
     }
+    
+    .timeline-item p
+    {
+        margin-left: 11%;
+    }
+    
+    .timeline-item h4
+    {
+        margin-left: 11%;
+    }
+    
+    .timeline-item::before
+    {
+        margin-left: 11%;
+    }
+    
+    .history-items
+    {
+        margin-left: 9%;
+    }
+    
+    
 }
 
 
