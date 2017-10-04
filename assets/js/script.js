@@ -4,4 +4,5 @@ $( "form" ).submit(function( event ) {
 
 function handleClick(){
   $('#myModal').modal('show')
+  $('form').trigger("reset")
 };
