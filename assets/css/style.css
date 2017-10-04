@@ -107,6 +107,22 @@
     margin-top: 30px;
 }
 
+.services-img-margin-up-down
+{
+    margin-top: 1%;
+}
+
+.services-img-margin-up-down img
+{
+    border: 1px solid black;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.form-group
+{
+    margin-bottom: 2%;
+}
+
 legend
 {
     font-size: 1.5rem;
@@ -226,7 +242,7 @@ fieldset
     
     .bg-strip-red
     {
-        margin-top: 180px;
+        /*margin-top: 180px;*/
     }
     
     .media-big-screen img
