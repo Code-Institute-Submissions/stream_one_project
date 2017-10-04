@@ -123,6 +123,11 @@
     margin-bottom: 2%;
 }
 
+.services-roofing-p-bold
+{
+    font-weight: bolder;
+}
+
 legend
 {
     font-size: 1.5rem;
@@ -198,6 +203,11 @@ fieldset
     .navbar-toggle
     {
         margin-right: 5px;
+    }
+    
+    .services-img-margin-up-down img
+    {
+        box-shadow: none;
     }
 }
 
