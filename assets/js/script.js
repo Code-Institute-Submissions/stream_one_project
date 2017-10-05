@@ -10,7 +10,8 @@ function handleClick(){
 $(document).ready(function(){
     if ($(window).width() >= 768) 
     {
-	    $(".footer-static-bottom").hover(function () {
+      $("footer").removeClass("footer-static-bottom").addClass("footer-slide-up");
+	    $(".footer-slide-up").hover(function () {
     $(".slide").slideToggle("fast");
   });
     }

@@ -291,6 +291,25 @@ fieldset
        /*background:#FFE4E1;    */
     }
     
+    .footer-slide-up 
+    {
+        /*position:fixed;*/
+        /*bottom:0;*/
+        /*right:0;*/
+        /*left:0;*/
+        
+        position:absolute;
+       bottom: 0px;
+       height:25px;
+       width: 100%;       
+       left: 0px;       
+       right: 0px;
+       /*border:1px solid black;*/
+       display: inline-block;       
+       cursor:pointer;
+       /*background:#FFE4E1;    */
+    }
+    
     .slide { 
     border:1px solid black;
     height:125px;    
