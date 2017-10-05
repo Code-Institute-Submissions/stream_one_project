@@ -1,3 +1,16 @@
+.footer-static-bottom 
+{
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+.footer-static-bottom-push-content-up
+{
+    padding-bottom: 20px;
+}
+
 .navbar
 {
     min-height: 180px;
@@ -50,8 +63,16 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
     
+}
+
+.middle-home-page-headings
+{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 .home-page-headings~img
@@ -174,6 +195,11 @@
     background-color: red;
 }
 
+.panel-default
+{
+    border-color: red;
+}
+
 legend
 {
     font-size: 1.5rem;
@@ -183,36 +209,6 @@ legend
     border: 1px solid #999;
     padding: 4px 15px;
 }
-
-/*label.field*/
-/*{*/
-/*    display: block;*/
-/*    text-align: right;*/
-/*    width: 100px;*/
-/*    float: left;*/
-/*    clear: both;*/
-/*}*/
-
-/*input*/
-/*{*/
-/*    width: 200px;*/
-/*    border-radius: 5px;*/
-/*    padding: 6px 8px;*/
-/*    margin-bottom: 3%;*/
-/*}*/
-
-/*textarea*/
-/*{*/
-/*    width: 200px;*/
-/*    border-radius: 5px;*/
-/*    padding: 6px 8px;*/
-/*    margin-bottom: 3%;*/
-/*}*/
-
-/*.field*/
-/*{*/
-/*    padding: 11px 16px;*/
-/*}*/
 
 fieldset
 {
