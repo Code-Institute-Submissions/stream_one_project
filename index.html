@@ -26,23 +26,6 @@
                 </nav>
         </header>
         <section class = "container-fluid">
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class = "row">
                 <div class = "col-xs-12 col-sm-12 bg-strip-red bg-strip-red-push-content-down">
                     <h6 class = "add-padding">Home</h6>
@@ -126,41 +109,62 @@
                     </div>
                 </div>
                 <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <form name = "myform" class = "form-horizontal form-push-down" onSubmit = "handleClick()">
-                        <fieldset>
-                            <legend> Get A Quick Quote</legend>
-                            
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="email">Email:</label>
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <div ng-app="">
+                        <form name = "myform" class = "form-horizontal form-push-down" onSubmit = "handleClick()">
+                            <fieldset>
+                                <legend> Get A Quick Quote</legend>
+                                
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <div class="col-sm-10">
+                                      <input type="email" ng-model = "email" class="form-control" id="email" placeholder="Enter email" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="name">Name:</label>
-                                <div class="col-sm-10">
-                                  <input type="name" class="form-control" id="name" placeholder="Enter your name">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="name">Name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="name" ng-model = "name" class="form-control" id="name" placeholder="Enter your name" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="number">Mobile:</label>
-                                <div class="col-sm-10">
-                                  <input type="tel" class="form-control" id="number" pattern="08+[0-9]{1}[0-9]{7}" placeholder="Enter your number">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="number">Mobile:</label>
+                                    <div class="col-sm-10">
+                                      <input type="tel" ng-model = "tel" class="form-control" id="number" pattern="08+[0-9]{1}[0-9]{7}" placeholder="Enter your number" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="textarea">Details:</label>
-                                <div class="col-sm-10">
-                                  <textarea class="form-control" id = "textarea" placeholder="Enter details" rows = "4" cols = "26"></textarea>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="textarea">Details:</label>
+                                    <div class="col-sm-10">
+                                      <textarea class="form-control" id = "textarea" placeholder="Enter details" rows = "4" cols = "26" required></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group"> 
-                                <div class="col-sm-offset-2 col-sm-10">
-                                  <button type="submit" class="btn btn-default">Submit</button>
+                                <div class="form-group"> 
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                      <button type="submit" class="btn btn-default">Submit</button>
+                                    </div>
                                 </div>
+                            </fieldset>
+                        </form>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                              </div>
+                              <div class="modal-body">
+                                <h1>Hello:  {{name}}</h1>
+                                <h2>Your number is: {{tel}}</h2>
+                                <h3>We have recieved your message and we will get in contact with you from the email provided: {{email}}</h3>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
                             </div>
-                        </fieldset>
-                    </form>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,4 +188,5 @@
     <script src = "https://code.jquery.com/jquery.min.js"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </html>
