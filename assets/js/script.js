@@ -7,12 +7,16 @@ function handleClick(){
   $('form').trigger("reset")
 };
 
-$(document).ready(function(){
-    if ($(window).width() >= 768) 
-    {
-      $("footer").removeClass("footer-static-bottom").addClass("footer-slide-up");
-	    $(".footer-slide-up").hover(function () {
-    $(".slide").slideToggle("fast");
-  });
-    }
+$(document).ready(function() 
+{
+    $("input").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "pink");
+    });
+    $("textarea").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "pink");
+    });
 });

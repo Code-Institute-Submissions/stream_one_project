@@ -1,5 +1,13 @@
+html {
+    height: 100%;
+}
 
-
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 140px;
+    min-height: 100%;
+}
 .navbar
 {
     min-height: 180px;
@@ -105,7 +113,11 @@
     padding-top: 20px;
     font-weight: bold;
     border-top: 1px solid black;
+    position: absolute;
+    bottom: 0px;
+    width: 100%
 }
+
 
 .media-big-screen
 {
@@ -189,6 +201,11 @@
     border-color: red;
 }
 
+/*.bg-footer*/
+/*    {*/
+/*        margin-top: 40px;*/
+/*    }*/
+
 legend
 {
     font-size: 1.5rem;
@@ -240,6 +257,11 @@ fieldset
     {
         box-shadow: none;
     }
+    
+    .extra-mobile-padding 
+    {
+        padding-bottom: 220px;
+    }
 }
 
 
@@ -271,62 +293,6 @@ fieldset
     {
         margin-left: 4%;
     }
-    
-    .footer-static-bottom 
-    {
-        /*position:fixed;*/
-        /*bottom:0;*/
-        /*right:0;*/
-        /*left:0;*/
-        
-        position:absolute;
-       bottom: 0px;
-       height:25px;
-       width: 100%;       
-       left: 0px;       
-       right: 0px;
-       /*border:1px solid black;*/
-       display: inline-block;       
-       cursor:pointer;
-       /*background:#FFE4E1;    */
-    }
-    
-    .footer-slide-up 
-    {
-        /*position:fixed;*/
-        /*bottom:0;*/
-        /*right:0;*/
-        /*left:0;*/
-        
-        position:absolute;
-       bottom: 0px;
-       height:25px;
-       width: 100%;       
-       left: 0px;       
-       right: 0px;
-       /*border:1px solid black;*/
-       display: inline-block;       
-       cursor:pointer;
-       /*background:#FFE4E1;    */
-    }
-    
-    .slide { 
-    border:1px solid black;
-    height:125px;    
-    left: 0px;
-    right:0px;
-    bottom: 25px;
-    display: none;    
-    position: absolute;
-}
-    
-    /*.body-substitute*/
-    /*{*/
-    /*    padding-bottom: 150px;*/
-    /*}*/
-    
-    
-    
     
 }
 
@@ -392,10 +358,15 @@ fieldset
         margin-left: 9%;
     }
     
+    /*.footer-static-bottom */
+    /*{*/
+    /*    position:fixed;*/
+    /*    bottom:0;*/
+    /*    right:0;*/
+    /*    left:0;*/
+    /*}*/
+    
     
 }
-
-
-
 
 
