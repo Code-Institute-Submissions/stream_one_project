@@ -10,13 +10,14 @@ function handleClick(){
 $(document).ready(function() 
 {
     $("input").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "#f49a9a");
         }, function(){
-        $(this).css("background-color", "pink");
+        $(this).css("background-color", "white");
     });
+    
     $("textarea").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "#f49a9a");
         }, function(){
-        $(this).css("background-color", "pink");
+        $(this).css("background-color", "white");
     });
 });
